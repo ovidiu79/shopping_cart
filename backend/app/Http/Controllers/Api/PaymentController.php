@@ -22,7 +22,7 @@ class PaymentController extends Controller
                         'product_data' => [
                             'name' => 'Vue Shop Orders'
                         ],
-                        'unit_ammount' => $this->calculateOrderTotal($request->cartItems)
+                        'unit_amount' => $this->calculateOrderTotal($request->cartItems)
                     ],
                     'quantity' => 1
                 ]],

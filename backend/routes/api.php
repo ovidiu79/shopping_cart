@@ -6,4 +6,4 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 Route::get('products', [ProductController::class, 'index']);
-Route::get('pay/order', [PaymentController::class, 'payByStripe']);
+Route::post('pay/order', [PaymentController::class, 'payByStripe']);
